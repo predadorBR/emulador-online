@@ -99,7 +99,7 @@
                 window.EJS_pathtodata = "data/";
                 window.EJS_startOnLoaded = true;
 
-                script.src = "/js/loader.js";
+                script.src = "./js/loader.js";
                 document.body.appendChild(script);
             }
             box.ondragover = () => box.setAttribute("drag", true);
