@@ -96,7 +96,7 @@
                 window.EJS_biosUrl = "";
                 window.EJS_gameUrl = url;
                 window.EJS_core = core;
-                window.EJS_pathtodata = "./data/";
+                window.EJS_pathtodata = "/emulador-online/";
                 window.EJS_startOnLoaded = true;
 
                 script.src = "./js/loader.js";
