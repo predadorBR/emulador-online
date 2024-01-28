@@ -10,7 +10,7 @@
                 if ('undefined' != typeof EJS_paths && typeof EJS_paths[file] === 'string') {
                     return EJS_paths[file];
                 } else {
-                    return scriptPath+file;
+                    return scriptPath+"js/"+file;
                 }
             }();
             script.onload = resolve;
@@ -28,7 +28,7 @@
                 if ('undefined' != typeof EJS_paths && typeof EJS_paths[file] === 'string') {
                     return EJS_paths[file];
                 } else {
-                    return scriptPath+file;
+                    return scriptPath+"css/"+file;
                 }
             }();
             css.onload = resolve;
