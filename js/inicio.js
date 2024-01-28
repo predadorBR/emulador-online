@@ -98,6 +98,7 @@
                 window.EJS_core = core;
                 window.EJS_pathtodata = "/emulador-online/";
                 window.EJS_startOnLoaded = true;
+                window.EJS_DEBUG_XX = true;
 
                 script.src = "./js/loader.js";
                 document.body.appendChild(script);
