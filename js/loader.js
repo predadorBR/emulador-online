@@ -46,7 +46,7 @@
         if (minifiedFailed) {
             console.log("Attempting to load non-minified files");
             if (file === "emulator.min.js") {
-                await loadScript('js/emulator.js');
+                await loadScript('emulator.js');
                 await loadScript('nipplejs.js');
                 await loadScript('shaders.js');
                 await loadScript('storage.js');
