@@ -60,7 +60,7 @@
     }
     
     if (('undefined' != typeof EJS_DEBUG_XX && true === EJS_DEBUG_XX)) {
-        await loadScript('js/emulator.js');
+        await loadScript('emulator.js');
         await loadScript('nipplejs.js');
         await loadScript('shaders.js');
         await loadScript('storage.js');
