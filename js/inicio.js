@@ -32,6 +32,7 @@
 
                     return await new Promise(resolve => {
                         const cores = {
+                            "Arcade": "arcade",
                             "Nintendo 64": "n64",
                             "Nintendo Game Boy": "gb",
                             "Nintendo Game Boy Advance": "gba",
