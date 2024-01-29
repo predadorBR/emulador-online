@@ -94,7 +94,7 @@
 
                 window.EJS_player = "#game";
                 window.EJS_gameName = parts.shift();
-                window.EJS_biosUrl = "/emulador-online/";
+                window.EJS_biosUrl = "";
                 window.EJS_gameUrl = url;
                 window.EJS_core = core;
                 window.EJS_pathtodata = "/emulador-online/";
