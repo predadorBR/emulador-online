@@ -553,7 +553,7 @@ class EmulatorJS {
             return new Promise((resolve, reject) => {
                 res = resolve;
                 
-                createWorker('compression/extract7z.js').then((worker) => {
+                createWorker('js/compression/extract7z.js').then((worker) => {
                     worker.onmessage = onMessage;
                     worker.postMessage(file);
                     //console.log(file);
@@ -564,8 +564,8 @@ class EmulatorJS {
             return new Promise((resolve, reject) => {
                 res = resolve;
                 
-                this.downloadFile("compression/libunrar.js", (res) => {
-                    this.downloadFile("compression/libunrar.wasm", (res2) => {
+                this.downloadFile("js/compression/libunrar.js", (res) => {
+                    this.downloadFile("js/compression/libunrar.wasm", (res2) => {
                         if (res === -1 || res2 === -1) {
                             this.textElem.innerText = this.localization('Network Error');
                             this.textElem.style.color = "red";
@@ -589,7 +589,7 @@ class EmulatorJS {
             return new Promise((resolve, reject) => {
                 res = resolve;
                 
-                createWorker('compression/extractzip.js').then((worker) => {
+                createWorker('js/compression/extractzip.js').then((worker) => {
                     worker.onmessage = onMessage;
                     worker.postMessage(file);
                 })
